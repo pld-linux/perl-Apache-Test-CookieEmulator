@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Apache
-%define		pnam	Test-CookieEmulator
+%define	pdir	Apache
+%define	pnam	Test-CookieEmulator
 Summary:	Test::Apache::CookieEmulator - test tool for cookies without httpd
 Summary(pl):	Test::Apache::CookieEmulator - narzêdzie testowe do ciasteczek bez httpd
 Name:		perl-Apache-Test-CookieEmulator
