@@ -6,10 +6,10 @@
 %define	pdir	Apache
 %define	pnam	Test-CookieEmulator
 Summary:	Test::Apache::CookieEmulator - test tool for Cookies without httpd
-#Summary(pl):	
+Summary(pl):	Test::Apache::CookieEmulator - narzêdzie testowe do ciasteczek bez httpd
 Name:		perl-Apache-Test-CookieEmulator
 Version:	0.04
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -19,13 +19,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module assists authors of Apache::* modules write test suites that
-would use B<Apache::Cookie> without actually having to run and query a
-server to test the cookie methods. Loaded in the test script after the
-author's target module is loaded, B<Test::Apache::CookieEmulator>
+This module assists authors of Apache::* modules write test suites
+that would use Apache::Cookie without actually having to run and query
+a server to test the cookie methods.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ pomaga autorom modu³ów Apache::* pisaæ w³asne zestawy testów
+u¿ywaj±ce Apache::Cookie bez potrzeby posiadania uruchomionego serwera
+i odpytywania go, aby przetestowaæ dzia³anie ciasteczek.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
