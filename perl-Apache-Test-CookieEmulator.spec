@@ -3,13 +3,13 @@
 # _without_tests - do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Apache
-%define	pnam	Test-CookieEmulator
+%define		pdir	Apache
+%define		pnam	Test-CookieEmulator
 Summary:	Test::Apache::CookieEmulator - test tool for Cookies without httpd
 Summary(pl):	Test::Apache::CookieEmulator - narzêdzie testowe do ciasteczek bez httpd
 Name:		perl-Apache-Test-CookieEmulator
 Version:	0.04
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -48,5 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change*
+%dir %{perl_sitelib}/Apache/Test
 %{perl_sitelib}/Apache/Test/*.pm
 %{_mandir}/man3/*
