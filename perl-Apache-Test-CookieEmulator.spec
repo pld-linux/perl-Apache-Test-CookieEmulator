@@ -8,8 +8,8 @@
 Summary:	Test::Apache::CookieEmulator - test tool for Cookies without httpd
 Summary(pl):	Test::Apache::CookieEmulator - narzêdzie testowe do ciasteczek bez httpd
 Name:		perl-Apache-Test-CookieEmulator
-Version:	0.04
-Release:	3
+Version:	0.05
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
