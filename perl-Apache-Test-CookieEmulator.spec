@@ -10,7 +10,7 @@ Summary(pl):	Test::Apache::CookieEmulator - narzêdzie testowe do ciasteczek bez 
 Name:		perl-Apache-Test-CookieEmulator
 Version:	0.05
 Release:	3
-License:	GPL/Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d78fe181f0874d0bc55cc50607a39f03
