@@ -33,7 +33,8 @@ i odpytywania go, aby przetestowaæ dzia³anie ciasteczek.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %{?with_tests:%{__make} test}
@@ -41,7 +42,8 @@ i odpytywania go, aby przetestowaæ dzia³anie ciasteczek.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -49,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change*
-%dir %{perl_sitelib}/Apache/Test
-%{perl_sitelib}/Apache/Test/*.pm
+%dir %{perl_vendorlib}/Apache/Test
+%{perl_vendorlib}/Apache/Test/*.pm
 %{_mandir}/man3/*
