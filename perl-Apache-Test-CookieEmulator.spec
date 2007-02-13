@@ -6,7 +6,7 @@
 %define		pdir	Apache
 %define		pnam	Test-CookieEmulator
 Summary:	Test::Apache::CookieEmulator - test tool for cookies without httpd
-Summary(pl.UTF-8):   Test::Apache::CookieEmulator - narzędzie testowe do ciasteczek bez httpd
+Summary(pl.UTF-8):	Test::Apache::CookieEmulator - narzędzie testowe do ciasteczek bez httpd
 Name:		perl-Apache-Test-CookieEmulator
 Version:	0.05
 Release:	3
