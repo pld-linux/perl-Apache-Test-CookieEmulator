@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Apache
 %define		pnam	Test-CookieEmulator
+%include	/usr/lib/rpm/macros.perl
 Summary:	Test::Apache::CookieEmulator - test tool for cookies without httpd
 Summary(pl.UTF-8):	Test::Apache::CookieEmulator - narzędzie testowe do ciasteczek bez httpd
 Name:		perl-Apache-Test-CookieEmulator
@@ -14,6 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d78fe181f0874d0bc55cc50607a39f03
+URL:		http://search.cpan.org/dist/Apache-Test-CookieEmulator/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 3.0.3-26
 BuildArch:	noarch
