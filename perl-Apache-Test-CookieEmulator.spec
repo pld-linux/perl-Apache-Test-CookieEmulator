@@ -4,7 +4,6 @@
 
 %define		pdir	Apache
 %define		pnam	Test-CookieEmulator
-%include	/usr/lib/rpm/macros.perl
 Summary:	Test::Apache::CookieEmulator - test tool for cookies without httpd
 Summary(pl.UTF-8):	Test::Apache::CookieEmulator - narzędzie testowe do ciasteczek bez httpd
 Name:		perl-Apache-Test-CookieEmulator
